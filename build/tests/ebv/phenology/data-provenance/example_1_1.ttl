@@ -13,15 +13,15 @@
         [ a "prov:Activity" ],
         [ a "prov:Activity" ],
         [ a "prov:Activity" ] ;
-    prov:Agent [ a "Person" ],
+    prov:Agent [ a "SoftwareAgent" ],
+        [ a "InstrumentPlatform" ],
         [ a "SoftwareAgent" ],
         [ a "Organization" ],
-        [ a "SoftwareAgent" ],
-        [ a "InstrumentPlatform" ] ;
-    prov:Entity [ a "prov:Entity" ],
-        [ a "prov:Entity" ],
-        [ a "prov:Entity" ;
+        [ a "Person" ] ;
+    prov:Entity [ a "prov:Entity" ;
             dcterms:description "Intermediate table with one national-scale annual mean VAP day-of-year per EBV entity." ],
+        [ a "prov:Entity" ],
+        [ a "prov:Entity" ],
         [ a "prov:Entity" ],
         [ a "prov:Entity" ],
         [ a "prov:Entity" ;

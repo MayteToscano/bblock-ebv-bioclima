@@ -2,7 +2,7 @@
   "title": "Validation report for syke.ebv.phenology.covjson-coverage - CovJSON Coverage",
   "bblockName": "CovJSON Coverage",
   "bblockId": "syke.ebv.phenology.covjson-coverage",
-  "generated": "2026-04-30T11:15:47.879476+00:00",
+  "generated": "2026-04-30T11:28:40.764906+00:00",
   "result": true,
   "items": [
     {
@@ -23,7 +23,7 @@
           "entries": [
             {
               "isError": false,
-              "message": "Using examples/finland-vap-coniferous.json from examples"
+              "message": "Using examples/finland-vap-coniferous-2001-crop.covjson from examples"
             },
             {
               "op": "jsonld-uplift",
@@ -40,64 +40,9 @@
               "op": "ttl-create",
               "empty": false,
               "filename": "example_1_1.ttl",
-              "size": 54,
-              "isError": false,
-              "message": "Output Turtle example_1_1.ttl created"
-            }
-          ]
-        },
-        {
-          "name": "JSON_SCHEMA",
-          "title": "JSON Schema",
-          "entries": [
-            {
-              "op": "validation",
-              "result": true,
-              "isError": false,
-              "message": "Validation passed"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": {
-        "type": "EXAMPLE",
-        "requireFail": false,
-        "filename": "build/tests/ebv/phenology/covjson-coverage/example_2_1.json",
-        "url": "https://maytetoscano.github.io/bblock-ebv-bioclima/build/tests/ebv/phenology/covjson-coverage/example_2_1.json",
-        "exampleIndex": 2,
-        "snippetIndex": 1,
-        "language": "application/json"
-      },
-      "result": true,
-      "sections": [
-        {
-          "name": "FILES",
-          "title": "Files",
-          "entries": [
-            {
-              "isError": false,
-              "message": "Using examples/finland-vap-coniferous-2001-crop.covjson from examples"
-            },
-            {
-              "op": "jsonld-uplift",
-              "isError": false,
-              "message": "JSON-LD context is present - uplifting"
-            },
-            {
-              "op": "jsonld-create",
-              "filename": "example_2_1.jsonld",
-              "isError": false,
-              "message": "Output JSON-LD example_2_1.jsonld created"
-            },
-            {
-              "op": "ttl-create",
-              "empty": false,
-              "filename": "example_2_1.ttl",
               "size": 44,
               "isError": false,
-              "message": "Output Turtle example_2_1.ttl created"
+              "message": "Output Turtle example_1_1.ttl created"
             }
           ]
         },
@@ -118,8 +63,8 @@
   ],
   "globalErrors": {},
   "counts": {
-    "total": 2,
-    "passed": 2,
+    "total": 1,
+    "passed": 1,
     "failed": 0
   }
 }
