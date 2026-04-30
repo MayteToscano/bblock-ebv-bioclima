@@ -3,3 +3,9 @@
   snippets:
     - language: json
       ref: examples/finland-vap-features.json
+
+- title: EBV Phenology Finland — Raster cell sample (Coniferous, 2001)
+  content: examples/finland-vap-grid-sample-2001.json
+  snippets:
+    - language: json
+      ref: examples/finland-vap-grid-sample-2001.json
