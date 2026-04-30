@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for syke.ebv.phenology.ebv-profile - EBV Dataset Profile",
+  "bblockName": "EBV Dataset Profile",
+  "bblockId": "syke.ebv.phenology.ebv-profile",
+  "generated": "2026-04-30T07:37:01.346901+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}
