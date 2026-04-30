@@ -7,7 +7,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2024-01-01",
+  "dateOfLastChange": "2026-04-30",
   "sources": [
     {
       "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -18,10 +18,14 @@
     "ogc.geo.features.feature",
     "syke.ebv.phenology.covjson-coverage",
     "syke.ebv.phenology.ebv-profile",
-    "syke.ebv.phenology.data-provenance",
-    "syke.ebv.phenology.phenology-indicators"
+    "syke.ebv.phenology.data-provenance"
   ],
-  "tags": ["feature", "map", "discovery", "geojson"],
+  "tags": [
+    "feature",
+    "map",
+    "discovery",
+    "geojson"
+  ],
   "group": "EBV Specific",
   "highlighted": true,
   "ldContext": "context.jsonld"
