@@ -1,0 +1,89 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: EBV phenology properties for map feature view
+type: object
+properties:
+  entity_type:
+    type: string
+    title: Forest Entity Type
+    description: The ecosystem entity type for which the phenology metric is derived.
+    x-jsonld-id: https://w3id.org/ogc/hosted/ebv-phenology/entity_type
+    x-jsonld-type: '@id'
+    x-jsonld-base: https://w3id.org/ogc/hosted/ebv-phenology/
+  year:
+    type: integer
+    title: Observation Year
+    x-jsonld-id: https://w3id.org/ogc/hosted/ebv-phenology/year
+    x-jsonld-type: http://www.w3.org/2001/XMLSchema#integer
+  vap_doy:
+    type: integer
+    title: Start of VAP (Day of Year)
+    x-jsonld-id: https://w3id.org/ogc/hosted/ebv-phenology/vap_doy
+    x-jsonld-type: http://www.w3.org/2001/XMLSchema#integer
+  mean_doy:
+    type: number
+    title: Mean DOY (spatial average)
+    x-jsonld-id: https://w3id.org/ogc/hosted/ebv-phenology/mean_doy
+    x-jsonld-type: http://www.w3.org/2001/XMLSchema#decimal
+  min_doy:
+    type: integer
+    title: Minimum DOY
+    x-jsonld-id: https://w3id.org/ogc/hosted/ebv-phenology/min_doy
+    x-jsonld-type: http://www.w3.org/2001/XMLSchema#integer
+  max_doy:
+    type: integer
+    title: Maximum DOY
+    x-jsonld-id: https://w3id.org/ogc/hosted/ebv-phenology/max_doy
+    x-jsonld-type: http://www.w3.org/2001/XMLSchema#integer
+  stddev:
+    type: number
+    title: Standard Deviation of DOY
+    x-jsonld-id: https://w3id.org/ogc/hosted/ebv-phenology/stddev
+    x-jsonld-type: http://www.w3.org/2001/XMLSchema#decimal
+  valid_percent:
+    type: number
+    title: Valid Pixel Percentage
+    x-jsonld-id: https://w3id.org/ogc/hosted/ebv-phenology/valid_percent
+    x-jsonld-type: http://www.w3.org/2001/XMLSchema#decimal
+  crs:
+    type: string
+    title: Coordinate Reference System
+    x-jsonld-id: https://covjson.org/def/core#referenceSystem
+  grid_width:
+    type: integer
+    title: Grid Width (columns)
+    x-jsonld-id: https://w3id.org/ogc/hosted/ebv-phenology/grid_width
+    x-jsonld-type: http://www.w3.org/2001/XMLSchema#integer
+  grid_height:
+    type: integer
+    title: Grid Height (rows)
+    x-jsonld-id: https://w3id.org/ogc/hosted/ebv-phenology/grid_height
+    x-jsonld-type: http://www.w3.org/2001/XMLSchema#integer
+  sensor:
+    type: string
+    title: Source Sensor Platform
+    x-jsonld-id: http://www.w3.org/ns/prov#wasGeneratedBy
+  algorithm:
+    type: string
+    title: Derivation Algorithm
+    x-jsonld-id: http://www.w3.org/ns/prov#used
+  trend_slope:
+    type: number
+    title: Trend Slope (days/year)
+    x-jsonld-id: https://w3id.org/ogc/hosted/ebv-phenology/trend_slope
+    x-jsonld-type: http://www.w3.org/2001/XMLSchema#decimal
+  anomaly:
+    type: string
+    title: Annual Anomaly Status
+    x-jsonld-id: https://w3id.org/ogc/hosted/ebv-phenology/anomaly
+required:
+- entity_type
+- year
+- vap_doy
+x-jsonld-prefixes:
+  ebv: https://w3id.org/ogc/hosted/ebv-phenology/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  covjson: https://covjson.org/def/core#
+  prov: http://www.w3.org/ns/prov#
+  skos: http://www.w3.org/2004/02/skos/core#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  qudt: http://qudt.org/schema/qudt/
