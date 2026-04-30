@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>EBV Phenology Vocabulary</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --fg: #17202a;
+      --muted: #5d6d7e;
+      --border: #d6dbdf;
+      --bg: #f8f9f9;
+      --card: #ffffff;
+      --accent: #1f618d;
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+      color: var(--fg);
+      background: var(--bg);
+    }
+    header {
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      padding: 2rem 1.25rem;
+    }
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 3rem;
+    }
+    h1 {
+      margin: 0 0 .5rem;
+      font-size: 2rem;
+    }
+    h2 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+    a {
+      color: var(--accent);
+    }
+    code {
+      background: #eef2f3;
+      padding: .12rem .3rem;
+      border-radius: .25rem;
+      word-break: break-word;
+    }
+    .intro {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+    .muted {
+      color: var(--muted);
+    }
+    .toc, .term {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.25rem;
+      margin: 1rem 0;
+      box-shadow: 0 1px 2px rgba(0,0,0,.03);
+    }
+    .toc ul {
+      columns: 2;
+      padding-left: 1.2rem;
+    }
+    .term-uri {
+      margin-top: -.4rem;
+    }
+    dl {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: .35rem .75rem;
+    }
+    dt {
+      font-weight: 700;
+    }
+    dd {
+      margin: 0;
+    }
+    @media (max-width: 700px) {
+      .toc ul {
+        columns: 1;
+      }
+      dl {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header id="top">
+    <div class="intro">
+      <h1>EBV Phenology Vocabulary</h1>
+      <p class="muted">
+        Temporary GitHub Pages vocabulary for the EBV Phenology Building Block.
+        These term IRIs are used by the OGC Building Blocks viewer while the vocabulary is not yet registered in OGC Rainbow.
+      </p>
+      <p><strong>Base URI:</strong> <code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#</code></p>
+    </div>
+  </header>
+  <main>
+    <section class="toc">
+      <h2>Terms</h2>
+      <ul>
+        <li><a href="#entity_type">entity_type — Forest Entity Type</a></li>
+<li><a href="#year">year — Observation Year</a></li>
+<li><a href="#vap_doy">vap_doy — Start of VAP (Day of Year)</a></li>
+<li><a href="#mean_doy">mean_doy — Mean DOY (spatial average)</a></li>
+<li><a href="#min_doy">min_doy — Minimum DOY</a></li>
+<li><a href="#max_doy">max_doy — Maximum DOY</a></li>
+<li><a href="#stddev">stddev — Standard Deviation of DOY</a></li>
+<li><a href="#valid_percent">valid_percent — Valid Pixel Percentage</a></li>
+<li><a href="#crs">crs — Coordinate Reference System</a></li>
+<li><a href="#grid_width">grid_width — Grid Width (columns)</a></li>
+<li><a href="#grid_height">grid_height — Grid Height (rows)</a></li>
+<li><a href="#sensor">sensor — Source Sensor Platform</a></li>
+<li><a href="#algorithm">algorithm — Derivation Algorithm</a></li>
+<li><a href="#trend_slope">trend_slope — Trend Slope (days/year)</a></li>
+<li><a href="#anomaly">anomaly — Annual Anomaly Status</a></li>
+<li><a href="#ConiferousForest">ConiferousForest — Coniferous Forest</a></li>
+<li><a href="#DeciduousForest">DeciduousForest — Deciduous Forest</a></li>
+      </ul>
+    </section>
+
+    
+    <section class="term" id="entity_type">
+      <h2>Forest Entity Type</h2>
+      <p class="term-uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#entity_type</code></p>
+      <dl>
+        <dt>Type</dt><dd>Object property</dd>
+        <dt>Label — EN</dt><dd>Forest Entity Type</dd>
+        <dt>Label — ES</dt><dd>Tipo de entidad forestal</dd>
+      </dl>
+      <p><strong>Definition:</strong> The ecosystem entity type for which the phenology metric is derived. Values may identify forest entities such as coniferous or deciduous forest.</p>
+      <p><strong>Definición:</strong> Tipo de entidad ecosistémica para la que se deriva la métrica fenológica. Puede identificar entidades forestales como bosque de coníferas o bosque caducifolio.</p>
+      <p><strong>Range:</strong> IRI or string</p>
+      
+      <p><a href="#top">Back to top</a></p>
+    </section>
+    
+    <section class="term" id="year">
+      <h2>Observation Year</h2>
+      <p class="term-uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#year</code></p>
+      <dl>
+        <dt>Type</dt><dd>Datatype property</dd>
+        <dt>Label — EN</dt><dd>Observation Year</dd>
+        <dt>Label — ES</dt><dd>Año de observación</dd>
+      </dl>
+      <p><strong>Definition:</strong> Calendar year associated with the phenology observation or derived annual EBV metric.</p>
+      <p><strong>Definición:</strong> Año natural asociado con la observación fenológica o con la métrica EBV anual derivada.</p>
+      <p><strong>Range:</strong> xsd:integer</p>
+      
+      <p><a href="#top">Back to top</a></p>
+    </section>
+    
+    <section class="term" id="vap_doy">
+      <h2>Start of VAP (Day of Year)</h2>
+      <p class="term-uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#vap_doy</code></p>
+      <dl>
+        <dt>Type</dt><dd>Datatype property</dd>
+        <dt>Label — EN</dt><dd>Start of VAP (Day of Year)</dd>
+        <dt>Label — ES</dt><dd>Inicio del periodo activo de vegetación (día del año)</dd>
+      </dl>
+      <p><strong>Definition:</strong> Integer day of year marking the start of the Vegetation Active Period.</p>
+      <p><strong>Definición:</strong> Día del año, expresado como entero, que marca el inicio del Periodo Activo de Vegetación.</p>
+      <p><strong>Range:</strong> xsd:integer</p>
+      
+      <p><a href="#top">Back to top</a></p>
+    </section>
+    
+    <section class="term" id="mean_doy">
+      <h2>Mean DOY (spatial average)</h2>
+      <p class="term-uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#mean_doy</code></p>
+      <dl>
+        <dt>Type</dt><dd>Datatype property</dd>
+        <dt>Label — EN</dt><dd>Mean DOY (spatial average)</dd>
+        <dt>Label — ES</dt><dd>DOY medio (promedio espacial)</dd>
+      </dl>
+      <p><strong>Definition:</strong> Spatial mean day-of-year value calculated across valid grid cells or pixels for the selected feature.</p>
+      <p><strong>Definición:</strong> Valor medio espacial del día del año calculado sobre las celdas o píxeles válidos del elemento seleccionado.</p>
+      <p><strong>Range:</strong> xsd:decimal</p>
+      
+      <p><a href="#top">Back to top</a></p>
+    </section>
+    
+    <section class="term" id="min_doy">
+      <h2>Minimum DOY</h2>
+      <p class="term-uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#min_doy</code></p>
+      <dl>
+        <dt>Type</dt><dd>Datatype property</dd>
+        <dt>Label — EN</dt><dd>Minimum DOY</dd>
+        <dt>Label — ES</dt><dd>DOY mínimo</dd>
+      </dl>
+      <p><strong>Definition:</strong> Minimum day-of-year value observed across the valid spatial cells for the selected feature.</p>
+      <p><strong>Definición:</strong> Valor mínimo del día del año observado en las celdas espaciales válidas del elemento seleccionado.</p>
+      <p><strong>Range:</strong> xsd:integer</p>
+      
+      <p><a href="#top">Back to top</a></p>
+    </section>
+    
+    <section class="term" id="max_doy">
+      <h2>Maximum DOY</h2>
+      <p class="term-uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#max_doy</code></p>
+      <dl>
+        <dt>Type</dt><dd>Datatype property</dd>
+        <dt>Label — EN</dt><dd>Maximum DOY</dd>
+        <dt>Label — ES</dt><dd>DOY máximo</dd>
+      </dl>
+      <p><strong>Definition:</strong> Maximum day-of-year value observed across the valid spatial cells for the selected feature.</p>
+      <p><strong>Definición:</strong> Valor máximo del día del año observado en las celdas espaciales válidas del elemento seleccionado.</p>
+      <p><strong>Range:</strong> xsd:integer</p>
+      
+      <p><a href="#top">Back to top</a></p>
+    </section>
+    
+    <section class="term" id="stddev">
+      <h2>Standard Deviation of DOY</h2>
+      <p class="term-uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#stddev</code></p>
+      <dl>
+        <dt>Type</dt><dd>Datatype property</dd>
+        <dt>Label — EN</dt><dd>Standard Deviation of DOY</dd>
+        <dt>Label — ES</dt><dd>Desviación típica del DOY</dd>
+      </dl>
+      <p><strong>Definition:</strong> Standard deviation of day-of-year values across valid spatial cells or pixels.</p>
+      <p><strong>Definición:</strong> Desviación típica de los valores de día del año en las celdas o píxeles espaciales válidos.</p>
+      <p><strong>Range:</strong> xsd:decimal</p>
+      
+      <p><a href="#top">Back to top</a></p>
+    </section>
+    
+    <section class="term" id="valid_percent">
+      <h2>Valid Pixel Percentage</h2>
+      <p class="term-uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#valid_percent</code></p>
+      <dl>
+        <dt>Type</dt><dd>Datatype property</dd>
+        <dt>Label — EN</dt><dd>Valid Pixel Percentage</dd>
+        <dt>Label — ES</dt><dd>Porcentaje de píxeles válidos</dd>
+      </dl>
+      <p><strong>Definition:</strong> Percentage of valid spatial cells or pixels used to compute the phenology summary metric.</p>
+      <p><strong>Definición:</strong> Porcentaje de celdas o píxeles espaciales válidos utilizados para calcular la métrica fenológica resumida.</p>
+      <p><strong>Range:</strong> xsd:decimal</p>
+      
+      <p><a href="#top">Back to top</a></p>
+    </section>
+    
+    <section class="term" id="crs">
+      <h2>Coordinate Reference System</h2>
+      <p class="term-uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#crs</code></p>
+      <dl>
+        <dt>Type</dt><dd>Datatype property</dd>
+        <dt>Label — EN</dt><dd>Coordinate Reference System</dd>
+        <dt>Label — ES</dt><dd>Sistema de referencia de coordenadas</dd>
+      </dl>
+      <p><strong>Definition:</strong> Coordinate reference system used by the spatial representation of the feature or coverage-derived summary.</p>
+      <p><strong>Definición:</strong> Sistema de referencia de coordenadas utilizado por la representación espacial del elemento o por el resumen derivado de la cobertura.</p>
+      <p><strong>Range:</strong> xsd:string</p>
+      <p><strong>Equivalent external term:</strong> <a href="https://covjson.org/def/core#referenceSystem">https://covjson.org/def/core#referenceSystem</a></p>
+      <p><a href="#top">Back to top</a></p>
+    </section>
+    
+    <section class="term" id="grid_width">
+      <h2>Grid Width (columns)</h2>
+      <p class="term-uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#grid_width</code></p>
+      <dl>
+        <dt>Type</dt><dd>Datatype property</dd>
+        <dt>Label — EN</dt><dd>Grid Width (columns)</dd>
+        <dt>Label — ES</dt><dd>Anchura de la malla (columnas)</dd>
+      </dl>
+      <p><strong>Definition:</strong> Number of columns in the grid used for the coverage-derived phenology data.</p>
+      <p><strong>Definición:</strong> Número de columnas de la malla utilizada para los datos fenológicos derivados de la cobertura.</p>
+      <p><strong>Range:</strong> xsd:integer</p>
+      
+      <p><a href="#top">Back to top</a></p>
+    </section>
+    
+    <section class="term" id="grid_height">
+      <h2>Grid Height (rows)</h2>
+      <p class="term-uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#grid_height</code></p>
+      <dl>
+        <dt>Type</dt><dd>Datatype property</dd>
+        <dt>Label — EN</dt><dd>Grid Height (rows)</dd>
+        <dt>Label — ES</dt><dd>Altura de la malla (filas)</dd>
+      </dl>
+      <p><strong>Definition:</strong> Number of rows in the grid used for the coverage-derived phenology data.</p>
+      <p><strong>Definición:</strong> Número de filas de la malla utilizada para los datos fenológicos derivados de la cobertura.</p>
+      <p><strong>Range:</strong> xsd:integer</p>
+      
+      <p><a href="#top">Back to top</a></p>
+    </section>
+    
+    <section class="term" id="sensor">
+      <h2>Source Sensor Platform</h2>
+      <p class="term-uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#sensor</code></p>
+      <dl>
+        <dt>Type</dt><dd>Datatype property</dd>
+        <dt>Label — EN</dt><dd>Source Sensor Platform</dd>
+        <dt>Label — ES</dt><dd>Plataforma sensora de origen</dd>
+      </dl>
+      <p><strong>Definition:</strong> Sensor or observation platform used as the source for the phenology derivation.</p>
+      <p><strong>Definición:</strong> Sensor o plataforma de observación utilizada como fuente para la derivación fenológica.</p>
+      <p><strong>Range:</strong> xsd:string</p>
+      <p><strong>Equivalent external term:</strong> <a href="http://www.w3.org/ns/prov#wasGeneratedBy">http://www.w3.org/ns/prov#wasGeneratedBy</a></p>
+      <p><a href="#top">Back to top</a></p>
+    </section>
+    
+    <section class="term" id="algorithm">
+      <h2>Derivation Algorithm</h2>
+      <p class="term-uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#algorithm</code></p>
+      <dl>
+        <dt>Type</dt><dd>Datatype property</dd>
+        <dt>Label — EN</dt><dd>Derivation Algorithm</dd>
+        <dt>Label — ES</dt><dd>Algoritmo de derivación</dd>
+      </dl>
+      <p><strong>Definition:</strong> Algorithm or processing method used to derive the phenology metric.</p>
+      <p><strong>Definición:</strong> Algoritmo o método de procesamiento utilizado para derivar la métrica fenológica.</p>
+      <p><strong>Range:</strong> xsd:string</p>
+      <p><strong>Equivalent external term:</strong> <a href="http://www.w3.org/ns/prov#used">http://www.w3.org/ns/prov#used</a></p>
+      <p><a href="#top">Back to top</a></p>
+    </section>
+    
+    <section class="term" id="trend_slope">
+      <h2>Trend Slope (days/year)</h2>
+      <p class="term-uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#trend_slope</code></p>
+      <dl>
+        <dt>Type</dt><dd>Datatype property</dd>
+        <dt>Label — EN</dt><dd>Trend Slope (days/year)</dd>
+        <dt>Label — ES</dt><dd>Pendiente de tendencia (días/año)</dd>
+      </dl>
+      <p><strong>Definition:</strong> Rate of change of the VAP start date over time, expressed in days per year.</p>
+      <p><strong>Definición:</strong> Tasa de cambio de la fecha de inicio del VAP a lo largo del tiempo, expresada en días por año.</p>
+      <p><strong>Range:</strong> xsd:decimal</p>
+      
+      <p><a href="#top">Back to top</a></p>
+    </section>
+    
+    <section class="term" id="anomaly">
+      <h2>Annual Anomaly Status</h2>
+      <p class="term-uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#anomaly</code></p>
+      <dl>
+        <dt>Type</dt><dd>Datatype property</dd>
+        <dt>Label — EN</dt><dd>Annual Anomaly Status</dd>
+        <dt>Label — ES</dt><dd>Estado de anomalía anual</dd>
+      </dl>
+      <p><strong>Definition:</strong> Annual anomaly category relative to a baseline, for example early, normal or late.</p>
+      <p><strong>Definición:</strong> Categoría de anomalía anual respecto a una línea base, por ejemplo temprana, normal o tardía.</p>
+      <p><strong>Range:</strong> xsd:string</p>
+      
+      <p><a href="#top">Back to top</a></p>
+    </section>
+    
+    <section class="term" id="ConiferousForest">
+      <h2>Coniferous Forest</h2>
+      <p class="term-uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#ConiferousForest</code></p>
+      <dl>
+        <dt>Type</dt><dd>Class</dd>
+        <dt>Label — EN</dt><dd>Coniferous Forest</dd>
+        <dt>Label — ES</dt><dd>Bosque de coníferas</dd>
+      </dl>
+      <p><strong>Definition:</strong> Forest dominated by cone-bearing trees, mainly spruce and pine in the Finnish context.</p>
+      <p><strong>Definición:</strong> Bosque dominado por árboles que producen conos, principalmente abeto y pino en el contexto finlandés.</p>
+      
+      
+      <p><a href="#top">Back to top</a></p>
+    </section>
+    
+    <section class="term" id="DeciduousForest">
+      <h2>Deciduous Forest</h2>
+      <p class="term-uri"><code>https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#DeciduousForest</code></p>
+      <dl>
+        <dt>Type</dt><dd>Class</dd>
+        <dt>Label — EN</dt><dd>Deciduous Forest</dd>
+        <dt>Label — ES</dt><dd>Bosque caducifolio</dd>
+      </dl>
+      <p><strong>Definition:</strong> Forest dominated by broad-leaved trees that shed leaves seasonally, mainly birch in the Finnish context.</p>
+      <p><strong>Definición:</strong> Bosque dominado por árboles de hoja ancha que pierden sus hojas estacionalmente, principalmente abedul en el contexto finlandés.</p>
+      
+      
+      <p><a href="#top">Back to top</a></p>
+    </section>
+    
+  </main>
+</body>
+</html>
