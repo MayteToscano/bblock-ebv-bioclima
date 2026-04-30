@@ -1,11 +1,5 @@
-- title: Finland coniferous VAP coverage (2001–2018)
-  content: Complete CoverageJSON Coverage for coniferous Start of Vegetation Active Period. Grid domain over 18 years.
-  snippets:
-    - language: json
-      ref: examples/finland-vap-coniferous.json
-
 - title: Finland coniferous VAP CoverageJSON crop (2001)
-  content: Full-resolution 50 × 50 CoverageJSON Grid crop from the original NetCDF, for coniferous forest in 2001.
+  content: Full-resolution 50 × 50 CoverageJSON Grid crop from the original NetCDF, for coniferous forest in 2001. This is intentionally small enough for the Building Blocks examples page.
   snippets:
     - language: json
       ref: examples/finland-vap-coniferous-2001-crop.covjson
