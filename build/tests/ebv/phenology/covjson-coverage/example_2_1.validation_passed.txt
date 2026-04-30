@@ -1,10 +1,10 @@
 Validation report for syke.ebv.phenology.covjson-coverage - CovJSON Coverage
-Generated 2026-04-30T10:28:30.373017+00:00
+Generated 2026-04-30T10:28:30.394002+00:00
 === Files ===
-Using examples/finland-vap-coniferous.json from examples
+Using examples/finland-vap-coniferous-2001-crop.covjson from examples
 JSON-LD context is present - uplifting
-Output JSON-LD example_1_1.jsonld created
-Output Turtle example_1_1.ttl created
+Output JSON-LD example_2_1.jsonld created
+Output Turtle example_2_1.ttl created
 === End Files ===
 
 === JSON Schema ===
