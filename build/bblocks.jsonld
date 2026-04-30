@@ -193,7 +193,7 @@
   ],
   "name": "Building Blocks - EBV Phenology Finland Building Blocks",
   "abstract": "Complete OGC Building Blocks for EBV phenology raster data. Models the full \nCoverageJSON UML (9 classes) plus 7 EBV-specific blocks = 17 total.\nMulti-language ontology (EN, ES, ZH, RO). Dataset: Finland VAP 2001-2018.\n",
-  "modified": "2026-04-30T10:35:53.494609",
+  "modified": "2026-04-30T11:10:53.104930",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"e7a962626cb1b8416eac2178e4b7326d31314fcd",
@@ -642,8 +642,8 @@
         }
       ],
       "dependsOn": [
-        "bblocks://syke.ebv.phenology.covjson-reference-system",
-        "bblocks://syke.ebv.phenology.covjson-axis"
+        "bblocks://syke.ebv.phenology.covjson-axis",
+        "bblocks://syke.ebv.phenology.covjson-reference-system"
       ],
       "tags": [
         "covjson",
@@ -884,8 +884,8 @@
         }
       ],
       "dependsOn": [
-        "bblocks://syke.ebv.phenology.covjson-tiled-ndarray",
-        "bblocks://syke.ebv.phenology.covjson-ndarray"
+        "bblocks://syke.ebv.phenology.covjson-ndarray",
+        "bblocks://syke.ebv.phenology.covjson-tiled-ndarray"
       ],
       "tags": [
         "covjson",
@@ -1041,10 +1041,10 @@
         }
       ],
       "dependsOn": [
-        "bblocks://syke.ebv.phenology.covjson-range",
-        "bblocks://syke.ebv.phenology.covjson-parameter-group",
         "bblocks://syke.ebv.phenology.covjson-domain",
-        "bblocks://syke.ebv.phenology.covjson-parameter"
+        "bblocks://syke.ebv.phenology.covjson-range",
+        "bblocks://syke.ebv.phenology.covjson-parameter",
+        "bblocks://syke.ebv.phenology.covjson-parameter-group"
       ],
       "tags": [
         "covjson",
@@ -1194,7 +1194,7 @@
       "itemIdentifier": "syke.ebv.phenology.data-provenance",
       "$schema": "metaschema.yaml",
       "name": "Data Provenance",
-      "abstract": "W3C PROV lineage: sensor, algorithm, workflow, agents.",
+      "abstract": "Lineage and provenance information for EBV phenology datasets and derived phenology indicators.",
       "status": "under-development",
       "dateTimeAddition": "2024-01-01T00:00:00Z",
       "itemClass": "schema",
@@ -1213,11 +1213,18 @@
       "tags": [
         "provenance",
         "prov",
-        "lineage"
+        "lineage",
+        "phenology"
       ],
       "group": "EBV Specific",
       "highlighted": true,
       "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/data-provenance/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
       "schema": [
         {
           "prof:hasArtifact": "https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/data-provenance/schema.yaml",
@@ -1233,9 +1240,11 @@
         }
       ],
       "sourceSchema": "https://maytetoscano.github.io/bblock-ebv-bioclima/_sources/data-provenance/schema.yaml",
+      "sourceLdContext": "https://maytetoscano.github.io/bblock-ebv-bioclima/_sources/data-provenance/context.jsonld",
       "resolvedSchemaProperties": "https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/data-provenance/resolvedProperties.json",
       "sourceFiles": "https://maytetoscano.github.io/bblock-ebv-bioclima/_sources/data-provenance/",
       "validationPassed": true,
+      "testOutputs": "https://github.com/MayteToscano/bblock-ebv-bioclima/blob/main/build/tests/ebv/phenology/data-provenance/",
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
@@ -1258,7 +1267,6 @@
         "bblocks:BBlock"
       ],
       "skos:prefLabel": "Data Provenance",
-      "ldContext": null,
       "openAPIDocument": null,
       "ontology": null,
       "rdfData": [],
@@ -1340,80 +1348,6 @@
       }
     },
     {
-      "itemIdentifier": "syke.ebv.phenology.phenology-indicators",
-      "$schema": "metaschema.yaml",
-      "name": "Phenology Indicators",
-      "abstract": "Temporal trend analysis, anomaly detection, change points derived from multi-temporal EBV coverage.",
-      "status": "under-development",
-      "dateTimeAddition": "2024-01-01T00:00:00Z",
-      "itemClass": "schema",
-      "register": "ogc-building-block-examples",
-      "version": "1.0",
-      "dateOfLastChange": "2026-04-30",
-      "sources": [],
-      "dependsOn": [
-        "bblocks://syke.ebv.phenology.covjson-coverage"
-      ],
-      "tags": [
-        "indicators",
-        "trends",
-        "anomalies",
-        "phenology"
-      ],
-      "group": "EBV Specific",
-      "highlighted": true,
-      "shaclShapes": null,
-      "schema": [
-        {
-          "prof:hasArtifact": "https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/phenology-indicators/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/phenology-indicators/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "sourceSchema": "https://maytetoscano.github.io/bblock-ebv-bioclima/_sources/phenology-indicators/schema.yaml",
-      "resolvedSchemaProperties": "https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/phenology-indicators/resolvedProperties.json",
-      "sourceFiles": "https://maytetoscano.github.io/bblock-ebv-bioclima/_sources/phenology-indicators/",
-      "validationPassed": true,
-      "testOutputs": "https://github.com/MayteToscano/bblock-ebv-bioclima/blob/main/build/tests/ebv/phenology/phenology-indicators/",
-      "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/phenology-indicators/index.json"
-        },
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/phenology-indicators/index.md"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://maytetoscano.github.io/bblock-ebv-bioclima/bblock/syke.ebv.phenology.phenology-indicators"
-        }
-      },
-      "@id": "bblocks://syke.ebv.phenology.phenology-indicators",
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset",
-        "bblocks:BBlock"
-      ],
-      "skos:prefLabel": "Phenology Indicators",
-      "ldContext": null,
-      "openAPIDocument": null,
-      "ontology": null,
-      "rdfData": [],
-      "isProfileOf": null,
-      "skos:topConceptOf": {
-        "@id": "https://maytetoscano.github.io/bblock-ebv-bioclima/"
-      }
-    },
-    {
       "itemIdentifier": "syke.ebv.phenology.ebv-feature-view",
       "$schema": "metaschema.yaml",
       "name": "EBV Feature View",
@@ -1431,11 +1365,10 @@
         }
       ],
       "dependsOn": [
+        "bblocks://syke.ebv.phenology.ebv-profile",
         "bblocks://ogc.geo.features.feature",
         "bblocks://syke.ebv.phenology.covjson-coverage",
-        "bblocks://syke.ebv.phenology.phenology-indicators",
-        "bblocks://syke.ebv.phenology.data-provenance",
-        "bblocks://syke.ebv.phenology.ebv-profile"
+        "bblocks://syke.ebv.phenology.data-provenance"
       ],
       "tags": [
         "feature",
@@ -1516,7 +1449,7 @@
       "itemIdentifier": "syke.ebv.phenology.ecosystem-services",
       "$schema": "metaschema.yaml",
       "name": "Ecosystem Services Link",
-      "abstract": "Connects phenological shifts to pollination, carbon sequestration, water regulation, timber, recreation.",
+      "abstract": "Connects phenological shifts to ecosystem services such as pollination, carbon sequestration, water regulation, timber and recreation.",
       "status": "under-development",
       "dateTimeAddition": "2024-01-01T00:00:00Z",
       "itemClass": "schema",
@@ -1525,12 +1458,14 @@
       "dateOfLastChange": "2026-04-30",
       "sources": [],
       "dependsOn": [
-        "bblocks://syke.ebv.phenology.phenology-indicators"
+        "bblocks://syke.ebv.phenology.data-provenance",
+        "bblocks://syke.ebv.phenology.covjson-coverage"
       ],
       "tags": [
         "ecosystem-services",
         "pollination",
-        "carbon"
+        "carbon",
+        "phenology"
       ],
       "group": "Policy",
       "highlighted": false,
@@ -1588,30 +1523,32 @@
       "itemIdentifier": "syke.ebv.phenology.policy-alignment",
       "$schema": "metaschema.yaml",
       "name": "Policy Alignment",
-      "abstract": "Maps EBV indicators to GBF, SDGs, IPBES, EU Biodiversity Strategy, Finland NBSAP.",
+      "abstract": "Policy-relevance and alignment record for EBV phenology data and derived indicators.",
       "status": "under-development",
       "dateTimeAddition": "2024-01-01T00:00:00Z",
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
       "dateOfLastChange": "2026-04-30",
-      "sources": [
-        {
-          "title": "Kunming-Montreal GBF",
-          "link": "https://www.cbd.int/gbf"
-        }
-      ],
+      "sources": [],
       "dependsOn": [
-        "bblocks://syke.ebv.phenology.phenology-indicators"
+        "bblocks://syke.ebv.phenology.data-provenance",
+        "bblocks://syke.ebv.phenology.covjson-coverage"
       ],
       "tags": [
         "policy",
-        "sdg",
-        "gbf",
-        "cbd"
+        "alignment",
+        "biodiversity",
+        "phenology"
       ],
       "group": "Policy",
       "highlighted": true,
+      "ldContext": {
+        "prof:hasArtifact": "https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/policy-alignment/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
       "shaclShapes": null,
       "schema": [
         {
@@ -1628,9 +1565,11 @@
         }
       ],
       "sourceSchema": "https://maytetoscano.github.io/bblock-ebv-bioclima/_sources/policy-alignment/schema.yaml",
+      "sourceLdContext": "https://maytetoscano.github.io/bblock-ebv-bioclima/_sources/policy-alignment/context.jsonld",
       "resolvedSchemaProperties": "https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/policy-alignment/resolvedProperties.json",
       "sourceFiles": "https://maytetoscano.github.io/bblock-ebv-bioclima/_sources/policy-alignment/",
       "validationPassed": true,
+      "testOutputs": "https://github.com/MayteToscano/bblock-ebv-bioclima/blob/main/build/tests/ebv/phenology/policy-alignment/",
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
@@ -1653,7 +1592,6 @@
         "bblocks:BBlock"
       ],
       "skos:prefLabel": "Policy Alignment",
-      "ldContext": null,
       "openAPIDocument": null,
       "ontology": null,
       "rdfData": [],
@@ -1705,9 +1643,6 @@
     },
     {
       "@id": "bblocks://syke.ebv.phenology.data-quality"
-    },
-    {
-      "@id": "bblocks://syke.ebv.phenology.phenology-indicators"
     },
     {
       "@id": "bblocks://syke.ebv.phenology.ebv-feature-view"

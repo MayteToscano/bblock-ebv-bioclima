@@ -4,7 +4,7 @@
   "itemIdentifier": "syke.ebv.phenology.ecosystem-services",
   "$schema": "metaschema.yaml",
   "name": "Ecosystem Services Link",
-  "abstract": "Connects phenological shifts to pollination, carbon sequestration, water regulation, timber, recreation.",
+  "abstract": "Connects phenological shifts to ecosystem services such as pollination, carbon sequestration, water regulation, timber and recreation.",
   "status": "under-development",
   "dateTimeAddition": "2024-01-01T00:00:00Z",
   "itemClass": "schema",
@@ -13,12 +13,14 @@
   "dateOfLastChange": "2026-04-30",
   "sources": [],
   "dependsOn": [
-    "syke.ebv.phenology.phenology-indicators"
+    "syke.ebv.phenology.data-provenance",
+    "syke.ebv.phenology.covjson-coverage"
   ],
   "tags": [
     "ecosystem-services",
     "pollination",
-    "carbon"
+    "carbon",
+    "phenology"
   ],
   "group": "Policy",
   "highlighted": false,

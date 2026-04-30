@@ -3,7 +3,7 @@
 
 `syke.ebv.phenology.ecosystem-services` *v1.0*
 
-Connects phenological shifts to pollination, carbon sequestration, water regulation, timber, recreation.
+Connects phenological shifts to ecosystem services such as pollination, carbon sequestration, water regulation, timber and recreation.
 
 [*Status*](http://www.opengis.net/def/status): Under development
 
