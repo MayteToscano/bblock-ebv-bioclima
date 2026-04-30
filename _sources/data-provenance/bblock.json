@@ -1,0 +1,12 @@
+{
+  "name": "Data Provenance",
+  "abstract": "Lineage and provenance information for EBV phenology datasets and derived phenology indicators.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-04-30T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-register",
+  "version": "0.1",
+  "dependsOn": [
+    "syke.ebv.phenology.phenology-indicators"
+  ]
+}
