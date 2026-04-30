@@ -3555,87 +3555,85 @@ properties:
     type: string
     title: Forest Entity Type
     description: The ecosystem entity type for which the phenology metric is derived.
-    x-jsonld-id: https://w3id.org/ogc/hosted/ebv-phenology/entity_type
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#entity_type
     x-jsonld-type: '@id'
-    x-jsonld-base: https://w3id.org/ogc/hosted/ebv-phenology/
+    x-jsonld-base: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#
   year:
     type: integer
     title: Observation Year
-    x-jsonld-id: https://w3id.org/ogc/hosted/ebv-phenology/year
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#year
     x-jsonld-type: http://www.w3.org/2001/XMLSchema#integer
   vap_doy:
     type: integer
     title: Start of VAP (Day of Year)
-    x-jsonld-id: https://w3id.org/ogc/hosted/ebv-phenology/vap_doy
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#vap_doy
     x-jsonld-type: http://www.w3.org/2001/XMLSchema#integer
   mean_doy:
     type: number
     title: Mean DOY (spatial average)
-    x-jsonld-id: https://w3id.org/ogc/hosted/ebv-phenology/mean_doy
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#mean_doy
     x-jsonld-type: http://www.w3.org/2001/XMLSchema#decimal
   min_doy:
     type: integer
     title: Minimum DOY
-    x-jsonld-id: https://w3id.org/ogc/hosted/ebv-phenology/min_doy
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#min_doy
     x-jsonld-type: http://www.w3.org/2001/XMLSchema#integer
   max_doy:
     type: integer
     title: Maximum DOY
-    x-jsonld-id: https://w3id.org/ogc/hosted/ebv-phenology/max_doy
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#max_doy
     x-jsonld-type: http://www.w3.org/2001/XMLSchema#integer
   stddev:
     type: number
     title: Standard Deviation of DOY
-    x-jsonld-id: https://w3id.org/ogc/hosted/ebv-phenology/stddev
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#stddev
     x-jsonld-type: http://www.w3.org/2001/XMLSchema#decimal
   valid_percent:
     type: number
     title: Valid Pixel Percentage
-    x-jsonld-id: https://w3id.org/ogc/hosted/ebv-phenology/valid_percent
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#valid_percent
     x-jsonld-type: http://www.w3.org/2001/XMLSchema#decimal
   crs:
     type: string
     title: Coordinate Reference System
-    x-jsonld-id: https://covjson.org/def/core#referenceSystem
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#crs
   grid_width:
     type: integer
     title: Grid Width (columns)
-    x-jsonld-id: https://w3id.org/ogc/hosted/ebv-phenology/grid_width
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#grid_width
     x-jsonld-type: http://www.w3.org/2001/XMLSchema#integer
   grid_height:
     type: integer
     title: Grid Height (rows)
-    x-jsonld-id: https://w3id.org/ogc/hosted/ebv-phenology/grid_height
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#grid_height
     x-jsonld-type: http://www.w3.org/2001/XMLSchema#integer
   sensor:
     type: string
     title: Source Sensor Platform
-    x-jsonld-id: http://www.w3.org/ns/prov#wasGeneratedBy
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#sensor
   algorithm:
     type: string
     title: Derivation Algorithm
-    x-jsonld-id: http://www.w3.org/ns/prov#used
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#algorithm
   trend_slope:
     type: number
     title: Trend Slope (days/year)
-    x-jsonld-id: https://w3id.org/ogc/hosted/ebv-phenology/trend_slope
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#trend_slope
     x-jsonld-type: http://www.w3.org/2001/XMLSchema#decimal
   anomaly:
     type: string
     title: Annual Anomaly Status
-    x-jsonld-id: https://w3id.org/ogc/hosted/ebv-phenology/anomaly
+    x-jsonld-id: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#anomaly
 required:
 - entity_type
 - year
 - vap_doy
 x-jsonld-prefixes:
-  ebv: https://w3id.org/ogc/hosted/ebv-phenology/
+  ebv: https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#
   xsd: http://www.w3.org/2001/XMLSchema#
-  covjson: https://covjson.org/def/core#
   prov: http://www.w3.org/ns/prov#
   skos: http://www.w3.org/2004/02/skos/core#
   rdfs: http://www.w3.org/2000/01/rdf-schema#
-  qudt: http://qudt.org/schema/qudt/
 
 ```
 
@@ -3652,7 +3650,7 @@ Links to the schema:
   "@context": {
     "entity_type": {
       "@context": {
-        "@base": "https://w3id.org/ogc/hosted/ebv-phenology/"
+        "@base": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#"
       },
       "@id": "ebv:entity_type",
       "@type": "@id"
@@ -3685,7 +3683,7 @@ Links to the schema:
       "@id": "ebv:valid_percent",
       "@type": "xsd:decimal"
     },
-    "crs": "covjson:referenceSystem",
+    "crs": "ebv:crs",
     "grid_width": {
       "@id": "ebv:grid_width",
       "@type": "xsd:integer"
@@ -3694,20 +3692,18 @@ Links to the schema:
       "@id": "ebv:grid_height",
       "@type": "xsd:integer"
     },
-    "sensor": "prov:wasGeneratedBy",
-    "algorithm": "prov:used",
+    "sensor": "ebv:sensor",
+    "algorithm": "ebv:algorithm",
     "trend_slope": {
       "@id": "ebv:trend_slope",
       "@type": "xsd:decimal"
     },
     "anomaly": "ebv:anomaly",
-    "ebv": "https://w3id.org/ogc/hosted/ebv-phenology/",
+    "ebv": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "covjson": "https://covjson.org/def/core#",
     "prov": "http://www.w3.org/ns/prov#",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "qudt": "http://qudt.org/schema/qudt/",
     "@version": 1.1
   }
 }

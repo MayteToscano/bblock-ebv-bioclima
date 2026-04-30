@@ -2,7 +2,7 @@
   "@context": {
     "entity_type": {
       "@context": {
-        "@base": "https://w3id.org/ogc/hosted/ebv-phenology/"
+        "@base": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#"
       },
       "@id": "ebv:entity_type",
       "@type": "@id"
@@ -35,7 +35,7 @@
       "@id": "ebv:valid_percent",
       "@type": "xsd:decimal"
     },
-    "crs": "covjson:referenceSystem",
+    "crs": "ebv:crs",
     "grid_width": {
       "@id": "ebv:grid_width",
       "@type": "xsd:integer"
@@ -44,20 +44,18 @@
       "@id": "ebv:grid_height",
       "@type": "xsd:integer"
     },
-    "sensor": "prov:wasGeneratedBy",
-    "algorithm": "prov:used",
+    "sensor": "ebv:sensor",
+    "algorithm": "ebv:algorithm",
     "trend_slope": {
       "@id": "ebv:trend_slope",
       "@type": "xsd:decimal"
     },
     "anomaly": "ebv:anomaly",
-    "ebv": "https://w3id.org/ogc/hosted/ebv-phenology/",
+    "ebv": "https://maytetoscano.github.io/bblock-ebv-bioclima/vocab/#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "covjson": "https://covjson.org/def/core#",
     "prov": "http://www.w3.org/ns/prov#",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "qudt": "http://qudt.org/schema/qudt/",
     "@version": 1.1
   }
 }
