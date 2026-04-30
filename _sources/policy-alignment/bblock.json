@@ -1,0 +1,13 @@
+{
+  "name": "Policy Alignment",
+  "abstract": "Policy-relevance and alignment record for EBV phenology data and derived indicators.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-04-30T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-register",
+  "version": "0.1",
+  "dependsOn": [
+    "syke.ebv.phenology.phenology-indicators",
+    "syke.ebv.phenology.data-provenance"
+  ]
+}
