@@ -21,12 +21,12 @@
     rdfs:label "CovJSON Coverage Collection" ;
     dct:abstract "Collection of coverages grouping multiple entities. Maps to the EBV Data Cube with 4 dimensions: lon, lat, time, entity."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-01-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-coverage-collection/index.json> ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/bblock/syke.ebv.phenology.covjson-coverage-collection> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-coverage-collection/index.md> ] ;
+            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-coverage-collection/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-coverage-collection/index.json> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-04-30"^^xsd:date ;
     dct:source <https://docs.ogc.org/cs/21-069r2/21-069r2.html> ;
@@ -89,10 +89,10 @@
     rdfs:label "EBV Feature View" ;
     dct:abstract "Discovery layer: GeoJSON Feature with EBV phenology properties linked to CoverageJSON building blocks via semantic context. Enables map visualization in OGC BB viewer."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-01-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/ebv-feature-view/index.md> ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/bblock/syke.ebv.phenology.ebv-feature-view> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/ebv-feature-view/index.md> ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/ebv-feature-view/index.json> ] ;
     dct:hasVersion "1.0" ;
@@ -111,17 +111,17 @@
             prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
             prof:hasRole role:validation ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/ebv-feature-view/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/ebv-feature-view/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/ebv-feature-view/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/ebv-feature-view/schema.json> ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.geo.features.feature>,
         <bblocks://syke.ebv.phenology.covjson-coverage>,
         <bblocks://syke.ebv.phenology.data-provenance>,
@@ -140,10 +140,10 @@
     dct:created "2024-01-01T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/ecosystem-services/index.json> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/ecosystem-services/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/bblock/syke.ebv.phenology.ecosystem-services> ] ;
+            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/bblock/syke.ebv.phenology.ecosystem-services> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/ecosystem-services/index.md> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-04-30"^^xsd:date ;
     skos:inScheme <https://maytetoscano.github.io/bblock-ebv-bioclima/> ;
@@ -173,10 +173,10 @@
     dct:created "2024-01-01T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/policy-alignment/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/bblock/syke.ebv.phenology.policy-alignment> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/policy-alignment/index.json> ] ;
+            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/policy-alignment/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/bblock/syke.ebv.phenology.policy-alignment> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-04-30"^^xsd:date ;
     dct:source <https://www.cbd.int/gbf> ;
@@ -188,12 +188,12 @@
         "policy",
         "sdg" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/policy-alignment/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/policy-alignment/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/policy-alignment/schema.yaml> ;
             prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://syke.ebv.phenology.phenology-indicators> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
@@ -205,18 +205,18 @@
 
 <https://maytetoscano.github.io/bblock-ebv-bioclima/build/bblocks.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    prov:wasAttributedTo _:N2ce67251d4ff46c78139a3cb8caf8fff ;
+    prov:wasAttributedTo _:N76e57f0cf4e2474c9fb846fa24c51f70 ;
     prov:wasGeneratedBy [ a prov:Activity ;
-            prov:endedAtTime "2026-04-30T10:12:23.808483"^^xsd:dateTime ;
-            prov:startedAtTime "2026-04-30T10:12:23.620240"^^xsd:dateTime ;
+            prov:endedAtTime "2026-04-30T10:27:17.001501"^^xsd:dateTime ;
+            prov:startedAtTime "2026-04-30T10:27:16.781581"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
                     dct:format "application/json" ;
-                    dct:hasVersion "git:fad5c4281f00e98ea6a4b91292bbf3a138b712a4" ;
+                    dct:hasVersion "git:31270372dfc3783f9c529e12798047c96f3d581e" ;
                     rdfs:seeAlso <https://maytetoscano.github.io/bblock-ebv-bioclima/build/register.json> ],
                 [ a prov:Entity ;
                     dct:format "application/yaml" ;
                     rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
-            prov:wasAssociatedWith _:N2ce67251d4ff46c78139a3cb8caf8fff ] .
+            prov:wasAssociatedWith _:N76e57f0cf4e2474c9fb846fa24c51f70 ] .
 
 <https://www.cbd.int/gbf> rdfs:label "Kunming-Montreal GBF" .
 
@@ -231,10 +231,10 @@
     rdfs:label "CovJSON Axis" ;
     dct:abstract "Single coordinate axis of a coverage domain: spatial (x,y,z) or temporal (t). Defines start, stop, num for regular axes or explicit values."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-01-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-axis/index.md> ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/bblock/syke.ebv.phenology.covjson-axis> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-axis/index.md> ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-axis/index.json> ] ;
     dct:hasVersion "1.0" ;
@@ -248,12 +248,12 @@
         "covjson",
         "grid" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/covjson-axis/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/covjson-axis/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/covjson-axis/schema.json> ;
             prof:hasRole role:schema ] ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
@@ -282,12 +282,12 @@
         "grid",
         "spatiotemporal" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/covjson-domain/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/covjson-domain/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/covjson-domain/schema.json> ;
             prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://syke.ebv.phenology.covjson-axis>,
         <bblocks://syke.ebv.phenology.covjson-reference-system> ;
@@ -301,12 +301,12 @@
     rdfs:label "CovJSON Parameter Group" ;
     dct:abstract "Semantic grouping of related parameters, e.g., velocity = speed + direction, or coniferous + deciduous VAP."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-01-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-parameter-group/index.json> ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-parameter-group/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/bblock/syke.ebv.phenology.covjson-parameter-group> ] ;
+            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/bblock/syke.ebv.phenology.covjson-parameter-group> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-parameter-group/index.json> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-04-30"^^xsd:date ;
     dct:source <https://docs.ogc.org/cs/21-069r2/21-069r2.html> ;
@@ -336,10 +336,10 @@
     rdfs:label "CovJSON Range" ;
     dct:abstract "Container for data values of a single parameter. Contains NdArray (inline) or TiledNdArray (tiled/external)."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-01-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/bblock/syke.ebv.phenology.covjson-range> ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-range/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/bblock/syke.ebv.phenology.covjson-range> ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-range/index.json> ] ;
     dct:hasVersion "1.0" ;
@@ -353,12 +353,12 @@
         "range",
         "values" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/covjson-range/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/covjson-range/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/covjson-range/schema.json> ;
             prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://syke.ebv.phenology.covjson-ndarray>,
         <bblocks://syke.ebv.phenology.covjson-tiled-ndarray> ;
@@ -374,10 +374,10 @@
     dct:created "2024-01-01T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/bblock/syke.ebv.phenology.covjson-reference-system> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-reference-system/index.md> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-reference-system/index.json> ] ;
+            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-reference-system/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-reference-system/index.md> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-04-30"^^xsd:date ;
     dct:source <https://docs.ogc.org/cs/21-069r2/21-069r2.html> ;
@@ -389,12 +389,12 @@
         "crs",
         "reference" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/covjson-reference-system/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/covjson-reference-system/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/covjson-reference-system/schema.yaml> ;
             prof:hasRole role:schema ] ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
@@ -406,12 +406,12 @@
     rdfs:label "CovJSON TiledNdArray" ;
     dct:abstract "Tiled range encoding that partitions data spatially/temporally via URI templates, enabling efficient partial loading."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-01-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-tiled-ndarray/index.json> ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/bblock/syke.ebv.phenology.covjson-tiled-ndarray> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-tiled-ndarray/index.md> ] ;
+            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-tiled-ndarray/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-tiled-ndarray/index.json> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-04-30"^^xsd:date ;
     dct:source <https://docs.ogc.org/cs/21-069r2/21-069r2.html> ;
@@ -423,12 +423,12 @@
         "tiled",
         "tiles" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/covjson-tiled-ndarray/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/covjson-tiled-ndarray/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/covjson-tiled-ndarray/schema.yaml> ;
             prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://syke.ebv.phenology.covjson-ndarray> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
@@ -492,17 +492,17 @@
         "ontology",
         "owl" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/ebv-ontology/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/ebv-ontology/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo owl:Ontology ;
             dct:format "text/turtle" ;
             prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/ebv-ontology/ontology.ttl> ;
-            prof:hasRole role:specification ] ;
+            prof:hasRole role:specification ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/ebv-ontology/schema.yaml> ;
+            prof:hasRole role:schema ] ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
 
@@ -513,12 +513,12 @@
     rdfs:label "EBV Dataset Profile" ;
     dct:abstract "Identity of an EBV dataset: class, name, entities, metric, scope, DOI. Following GEO BON framework."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-01-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/bblock/syke.ebv.phenology.ebv-profile> ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/ebv-profile/index.json> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/ebv-profile/index.md> ] ;
+            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/ebv-profile/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/bblock/syke.ebv.phenology.ebv-profile> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-04-30"^^xsd:date ;
     dct:source <https://geobon.org/ebvs/> ;
@@ -547,12 +547,12 @@
     rdfs:label "CovJSON NdArray" ;
     dct:abstract "N-dimensional array holding actual coverage data values. Defines dataType, shape, axisNames, and the flat values array."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-01-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-ndarray/index.json> ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/bblock/syke.ebv.phenology.covjson-ndarray> ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-ndarray/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/bblock/syke.ebv.phenology.covjson-ndarray> ] ;
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-ndarray/index.json> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-04-30"^^xsd:date ;
     dct:source <https://docs.ogc.org/cs/21-069r2/21-069r2.html> ;
@@ -565,12 +565,12 @@
         "pixels",
         "values" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/covjson-ndarray/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/covjson-ndarray/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/covjson-ndarray/schema.yaml> ;
             prof:hasRole role:schema ] ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
@@ -582,12 +582,12 @@
     rdfs:label "CovJSON Parameter" ;
     dct:abstract "Describes what is measured: observed property with multi-language labels, unit of measure, and optional category encoding."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-01-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-parameter/index.json> ],
+        [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/bblock/syke.ebv.phenology.covjson-parameter> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-parameter/index.md> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-parameter/index.json> ] ;
+            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-parameter/index.md> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-04-30"^^xsd:date ;
     dct:source <https://docs.ogc.org/cs/21-069r2/21-069r2.html> ;
@@ -599,14 +599,14 @@
         "observable",
         "parameter",
         "unit" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/covjson-parameter/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/covjson-parameter/schema.yaml> ;
             prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/covjson-parameter/context.jsonld> ;
+            prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://maytetoscano.github.io/bblock-ebv-bioclima/build/annotated/ebv/phenology/covjson-parameter/schema.json> ;
@@ -623,12 +623,12 @@
     rdfs:label "Phenology Indicators" ;
     dct:abstract "Temporal trend analysis, anomaly detection, change points derived from multi-temporal EBV coverage."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-01-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/phenology-indicators/index.md> ],
+        [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/phenology-indicators/index.json> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/bblock/syke.ebv.phenology.phenology-indicators> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/phenology-indicators/index.md> ] ;
+            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/bblock/syke.ebv.phenology.phenology-indicators> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-04-30"^^xsd:date ;
     skos:inScheme <https://maytetoscano.github.io/bblock-ebv-bioclima/> ;
@@ -657,10 +657,10 @@
     rdfs:label "CovJSON Coverage" ;
     dct:abstract "Complete coverage composing Domain, Parameters, ParameterGroups and Ranges. The core CoverageJSON object for raster data."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-01-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/bblock/syke.ebv.phenology.covjson-coverage> ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/json-full/ebv/phenology/covjson-coverage/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/bblock/syke.ebv.phenology.covjson-coverage> ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://maytetoscano.github.io/bblock-ebv-bioclima/build/generateddocs/markdown/ebv/phenology/covjson-coverage/index.md> ] ;
     dct:hasVersion "1.0" ;
@@ -711,7 +711,7 @@
 CoverageJSON UML (9 classes) plus 7 EBV-specific blocks = 17 total.
 Multi-language ontology (EN, ES, ZH, RO). Dataset: Finland VAP 2001-2018.
 """^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
-    dct:modified "2026-04-30T10:12:21.687272"^^xsd:dateTime ;
+    dct:modified "2026-04-30T10:27:14.933038"^^xsd:dateTime ;
     owl:imports <https://opengeospatial.github.io/bblocks/register.json> ;
     skos:hasTopConcept <bblocks://syke.ebv.phenology.covjson-axis>,
         <bblocks://syke.ebv.phenology.covjson-coverage>,
@@ -747,7 +747,7 @@ Multi-language ontology (EN, ES, ZH, RO). Dataset: Finland VAP 2001-2018.
     foaf:homepage <https://maytetoscano.github.io/bblock-ebv-bioclima/> ;
     bblocks:hasValidationReport <https://maytetoscano.github.io/bblock-ebv-bioclima/build/tests/report.html> .
 
-_:N2ce67251d4ff46c78139a3cb8caf8fff a prov:Agent,
+_:N76e57f0cf4e2474c9fb846fa24c51f70 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dct:hasVersion "0.5.28" ;

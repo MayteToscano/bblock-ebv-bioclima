@@ -1,5 +1,5 @@
 Validation report for syke.ebv.phenology.phenology-indicators - Phenology Indicators
-Generated 2026-04-30T10:12:23.424817+00:00
+Generated 2026-04-30T10:27:16.557414+00:00
 === Files ===
 Using examples/coniferous-trend.json from examples
 === End Files ===
